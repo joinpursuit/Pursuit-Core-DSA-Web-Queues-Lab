@@ -44,30 +44,6 @@ class QueueArray {
     }
   }
 
-  /**
-   * Return the contents of the queue in an array
-   * @returns {array} 
-   */
-  toArray() {
-    let arr = []
-    while (!this.isEmpty()) {
-      arr.push(this.dequeue());
-    }
-
-    for (let elem of arr) {
-      this.enqueue(elem)
-    }
-    return arr
-  }
-
-  /**
-   * Return a string representation of the queue
-   * @returns {string} a string representing the queue
-   */
-  toString() {
-    let str = this.toArray().join(', ')
-    return `< ${str} <=`
-  }
 }
 
 module.exports = QueueArray;
