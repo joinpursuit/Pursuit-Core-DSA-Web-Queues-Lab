@@ -22,8 +22,8 @@
 You must implement the following methods in your Queue:
 
 * `.enqueue(value)`: Add new element to the end of the queue.
-* `.dequeue()`: Removes element from beginning of the queue and returns it.
-* `.peek()`: Returns the element from beginning of the queue without removing it.
+* `.dequeue()`: Removes element from beginning of the queue and returns it. Returns null if the queue is empty.
+* `.peek()`: Returns the element from beginning of the queue without removing it. Returns null if the queue is empty
 * `.isEmpty()`: Returns a boolean indicating if the queue is empty or not.
 
 #### Bonus
