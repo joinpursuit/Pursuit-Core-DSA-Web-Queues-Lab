@@ -26,6 +26,10 @@ describe("QueueArray functionality", () => {
     expect(testQ.toString()).toBe('< 2, 3, 4 <=') // assert
   })
 
-  test.todo("Queue.fromArray(arr) returns a queue with made out of the contents of arr")
-
+  test("Queue.fromArray(arr) returns a queue made out of the contents of arr", () => {
+    let queue = QueueArray.fromArray([1, 2, 3])
+    expect(queue instanceof QueueArray).toBe(true)
+    expect(queue.isEmpty()).toBe(false)
+    expect(queue.toString()).toBe('< 1, 2, 3 <=')
+  })
 })
