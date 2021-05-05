@@ -32,4 +32,10 @@ describe("QueueArray functionality", () => {
     expect(queue.isEmpty()).toBe(false)
     expect(queue.toString()).toBe('< 1, 2, 3 <=')
   })
+
+  test("Queue.fromArray() is a static method and not part of the instance", () => {
+    let testQ = new QueueArray()
+    expect(typeof QueueArray.fromArray).toBe('function')
+    expect(typeof testQ.fromArray).toBe(undefined) // Should not be present in the instance
+  })
 })
