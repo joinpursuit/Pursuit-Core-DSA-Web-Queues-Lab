@@ -1,6 +1,6 @@
 class QueueArray {
   constructor() {
-    this.storage = []
+
   }
 
   /**
@@ -9,7 +9,7 @@ class QueueArray {
    * @returns {undefined} 
    */
   enqueue(value) {
-    this.storage.push(value)
+
   }
 
   /**
@@ -17,10 +17,7 @@ class QueueArray {
    * @returns {any} the value removed
    */
   dequeue() {
-    if (this.isEmpty()) {
-      throw new Error("Nothing to dequeue")
-    }
-    return this.storage.shift();
+
   }
 
   /**
@@ -29,7 +26,7 @@ class QueueArray {
    * @returns {any} the value in the front of the queue
    */
   peek() {
-    return this.storage[0];
+
   }
 
   /**
@@ -37,13 +34,24 @@ class QueueArray {
    * @returns {boolean} whether the queue is empty
    */
   isEmpty() {
-    if (this.storage.length === 0) {
-      return true
-    } else {
-      return false
-    }
+
   }
 
+  /**
+   * Return an arr with the contents of the queue
+   * @returns {array} An array with the elements of queue
+   */
+  toArray() {
+
+  }
+
+  toString() {
+
+  }
+
+  static fromArray(arr) {
+
+  }
 }
 
 module.exports = QueueArray;
