@@ -1,6 +1,6 @@
-const Queue = require("../QueueArray")
+const Queue = require("../QueueLinkedList")
 
-describe("QueueArray functionality", () => {
+describe("Queue functionality", () => {
   test(".toArray() returns an array with the contents of the queue", () => {
     const testQ = new Queue()
     testQ.enqueue(1) // act
@@ -56,6 +56,6 @@ describe("QueueArray functionality", () => {
   test("Queue.fromArray() is a static method and not part of the instance", () => {
     let testQ = new Queue()
     expect(typeof Queue.fromArray).toBe('function')
-    expect(typeof testQ.fromArray).toBe('undefined') // Should not be present in the instance
+    expect(typeof testQ.fromArray).toBe(undefined) // Should not be present in the instance
   })
 })
