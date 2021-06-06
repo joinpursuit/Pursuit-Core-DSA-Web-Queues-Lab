@@ -15,7 +15,7 @@ describe("QueueArray functionality", () => {
   })
 
   test(".dequeue() returns undefined if queue is empty", () => {
-    const testQ = new Queue()
+    const testQ = new QueueArray()
     expect(testQ.dequeue()).toBe(undefined)
   })
 
